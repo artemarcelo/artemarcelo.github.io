@@ -785,12 +785,12 @@ textarea.form-control {
 }
 
 .ibanner {
-  height: 100vh;
-  background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
-  url("../images/Hero.jpg");
+  height: 80vh;
+  /* background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), */
+  /* url("../images/Hero.jpg");
   background-repeat: no-repeat;
   background-position: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .white-color {
@@ -883,6 +883,14 @@ input[type=radio] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  h5 {
+    font-size: 9px;
+  }
+
+  p {
+    font-size: 9px !important;
   }
 
   /* .banner {
