@@ -19,6 +19,10 @@ html {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -204,6 +208,7 @@ a:hover {
   letter-spacing: 1px;
   font-weight: 700;
 }
+
 
 ul.dropdown-menu {
   background: rgb(21, 21, 21);
@@ -741,7 +746,7 @@ textarea.form-control {
 }
 .footer {
   padding: 60px 0px;
-  background: #000;
+  background: #1b1e29;
 }
 
 .footer-widget a {
@@ -752,3 +757,135 @@ textarea.form-control {
   color: #f44336;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Cambios Alternativos */
+
+/* Gallery */
+
+.col-12 {}
+
+/* .row-nav {
+  background-color: #EBE6E0;
+  width: 100%;
+} */
+
+
+.image {
+  transform: scale(0.98);
+  opacity: 0;
+  border-radius: 15px;
+  transition: all 99ms ease-in !important;
+}
+
+
+
+.mostrar {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
+  url("../images/Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+
+.white-color {
+  color: white;
+}
+
+.hero-words {
+  margin-top: 130px;
+}
+
+/* .gradient {
+  background-color: #000;
+  width: 100%;
+  
+} */
+
+i {
+  font-size: 20px;
+}
+
+.wrapper {
+  padding-top: 30px;
+}
+
+/* Menu Desplegable */
+.btn-hidden {
+  display: none;
+}
+
+.btn-hidden.show {
+display: block;
+}
+
+.btn-des {
+  padding-top: 15px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+.btn-des:hover {
+  cursor: pointer;
+  color: red;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+#btnHide{
+  transform: scale(1.3);
+  padding-top: 15px;
+  padding-top: 15px;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+
+#btnHide:hover{
+  cursor: pointer;
+  color: red;
+}
+
+.btn-hide {
+  visibility: hidden;
+}
+
+.btn-hide.showbutton {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-des.hideDes {
+  display: none;
+}
+
+/* Enlaces */
+
+.overlay-inner {
+  
+}
+
+.ChaosRef {}
+
+/* Media Queries */
+
+@media screen and (max-width:500px) {
+  .flex-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* .banner {
+    background-size: cover;
+  } */
+}
