@@ -1,3 +1,12 @@
+// Variables
+const galeriaOculta = document.querySelectorAll('.image');
+
+//Menu Desplegable
+const show = document.querySelector("#btnShow");
+const hide = document.querySelector("#btnHide");
+const nav = document.querySelector("#btnHidden");
+
+
 /**
  * WEBSITE: https://themefisher.com
  * TWITTER: https://twitter.com/themefisher
@@ -72,3 +81,29 @@ AOS.init({
 
 
 })(jQuery);
+
+// Observer
+
+const observer = new IntersectionObserver ((entries)=> {
+    entries.forEach((entry)=>{
+        entry.target.classList.toggle('mostrar', entry.isIntersecting);
+    })
+})
+
+galeriaOculta.forEach((galeria)=>observer.observe(galeria));
+
+// Menu Desplegable
+
+show.addEventListener("click", ()=> {
+    nav.classList.add("show");
+    hide.classList.add("showbutton");
+    show.classList.add("hideDes")
+})
+
+hide.addEventListener("click", ()=> {
+    nav.classList.remove("show");
+    show.classList.remove("hideDes")
+    hide.classList.remove("showbutton");
+})
+
+console.log(nav);
