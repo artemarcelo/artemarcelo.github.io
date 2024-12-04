@@ -784,7 +784,7 @@ textarea.form-control {
   opacity: 1;
 }
 
-.banner {
+.ibanner {
   height: 100vh;
   background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
   url("../images/Hero.jpg");
